@@ -18,6 +18,27 @@
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
+        input {
+            padding: 10px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: calc(100% - 120px);
+        }
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            border: none;
+            background-color: darkgray;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: gray;
+            color: while;
+            cursor: pointer;
+        }
         h1 {
             color: #333;
         }
@@ -34,18 +55,58 @@
             border-radius: 4px;
             min-height: 50px;
         }
+        .imcomplete-area {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            min-height: 200px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        .title {
+            font-weight: bold;
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+        .list-row {
+            display: flex;
+            align-items: center;
+            /* justify-content: space-between; */
+            margin-bottom: 10px;
+            padding: 5px;
+            /* margin-top: 10px;
+            margin: 10px; */
+        }
+        .todo-item {
+            margin: 6px;
+        }
+        .complete-area {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            min-height: 200px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>JavaScript学習</h1>
-        <p>コンソールを開いて実行結果を確認してください（F12キー）</p>
-        <div id="output">
-            <p>ここに結果が表示されます</p>
-        </div>
-        <button onclick="runExample()">サンプル実行</button>
+        <input type="text" id="add-text" placeholder="todoを入力" />
+        <button id="add-button">追加</button>
     </div>
-
+    <div class="imcomplete-area">
+        <p class="title">未完了のTODO</p>
+        <ul id="incomplete-list">
+        </ul>
+    </div>
+    <div class="complete-area">
+        <p class="title">完了のTODO</p>
+        <ul id="complete-list">
+        </ul>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
