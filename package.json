@@ -1,0 +1,29 @@
+{
+  "name": "javascript_tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:js": "live-server javascript-basics --port=3000",
+    "start:react": "cd react-app && npm run dev",
+    "create:react": "npm create vite@latest react-app -- --template react",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acta0724/javascript_tutorial.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/acta0724/javascript_tutorial/issues"
+  },
+  "homepage": "https://github.com/acta0724/javascript_tutorial#readme",
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.3",
+    "live-server": "^1.2.2",
+    "vite": "^7.1.7"
+  }
+}
