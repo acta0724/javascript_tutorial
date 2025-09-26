@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 120px);
+}
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    background-color: darkgray;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: gray;
+    color: while;
+    cursor: pointer;
+}
+h1 {
+    color: #333;
+}
+code {
+    background-color: #f4f4f4;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+#output {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 4px;
+    min-height: 50px;
+}
+.imcomplete-area {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    min-height: 200px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+.title {
+    font-weight: bold;
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.list-row {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    margin-bottom: 10px;
+    padding: 5px;
+    /* margin-top: 10px;
+    margin: 10px; */
+}
+.todo-item {
+    margin: 6px;
+}
+.complete-area {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    min-height: 200px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
